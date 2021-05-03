@@ -14,14 +14,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 2px solid #61dafb;
 }
 
 .App-link {
@@ -36,3 +35,286 @@
     transform: rotate(360deg);
   }
 }
+
+
+.nav {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  font-size: 1.1rem;
+}
+.nav_link {
+  display: block;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+.nav_link:focus,
+.nav_link:active {
+  color: red;
+
+}
+.nav li{
+  cursor: pointer;
+
+}
+.nav li:active {
+  background: #61dafb;
+  border-radius: 40px 40px 0 0;
+}
+.title_header{
+  background: #bbb;
+}
+
+.login{
+  min-height: 10vh;
+  display: inline-flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  border: 1px solid #f0f0f0;
+  margin-top: 20px;
+  min-width: 30vw;
+}
+.login_header{
+  background: #f0f0f0;
+  padding: 10px;
+}
+.disabled:invalid{
+  color: white;
+}
+ .login form {
+   font-size: 1.1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 10px;
+   min-height: 3vh;
+ }
+ .login select{
+   border: 1px solid #f0f0f0;
+   border-radius: 5px;
+   padding: 1rem;
+   font-size: 1rem
+ }
+
+ .view_poll{
+   border: none;
+   background-color: #23ebeb;
+   padding: .7rem;
+   margin-top: 15px;
+   border-radius: 5px;
+   text-align: center;
+   cursor: pointer;
+   font-size: 1.2rem;
+ }
+
+.login select:first-child{
+  padding: 15px;
+}
+
+.login_icon{
+  font-size: 10rem;
+  padding: 15px;
+}
+.leader{
+  min-height: 20vh;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  padding: .5rem;
+  margin-top: 25px;
+  min-width: 33vw;
+}
+.avatar{
+  width: 5em;
+}
+
+
+.leader_txt{
+  text-align: left;
+  margin: 25px;
+  min-width: 20vw;
+
+}
+.leader_txt h4{
+  margin-bottom: 20px;
+}
+
+
+.quest{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  min-height: 100%;
+  padding: .5vw 0;
+}
+.score{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  min-width: 6vw;
+  min-height: 20vh;
+}
+.score h5{
+}
+.score_num{
+  background: #3dcacc;
+  display: inline-flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 70px;
+  min-height: 70px;
+  color: #ffffff;
+
+}
+.leaders_board{
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.poll_head{
+  min-height: 20vh;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  min-width: 33vw;
+  margin-top: 25px;
+  overflow: hidden;
+  position: relative;
+
+}
+.poll{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem;
+
+}
+.poll form {
+  display:flex;
+flex-direction: column;
+}
+.poll form input {
+  margin-right: 1vw;
+}
+.poll form label {
+  margin: .2vw;
+}
+.who{
+  text-align: left;
+  background: #d4d4d4;
+}
+.who h6{
+  padding: .5vw;
+}
+.Hello{
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: row;
+  margin-left: 5vw;
+  list-style: none;
+  font-size: 1.1rem;
+}
+.Hello button {
+  border: none;
+  background-color: #23ebeb;
+  padding: .2rem;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 2vw;
+}
+.show_less{
+  font-size: 1rem;
+  color: #4f4f4f;
+}
+.question{
+    display:inline-flex;
+  flex-direction: column;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  min-width: 45vw;
+  margin-top: 25px;
+  overflow: hidden;
+}
+.question h1{padding: 10px;}
+.question form{
+  display:flex;
+ flex-direction: column;
+ align-items: normal;
+ border-top: 1px solid #d4d4d4;
+ border-radius: 10px;
+ padding: 1rem;
+}
+.question form input{
+  padding: 5px;
+  margin: 5px 0;
+  min-height: 2rem;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+}
+.login button,
+.question button,
+.poll button {
+  border: none;
+  background-color: #23ebeb;
+  padding: .5rem;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.question p, .question h3 {
+  margin: 15px;
+  text-align: left;
+}
+
+
+.optionOne::after,
+.optionTwo::after{
+  content: "Your Vote";
+  position: absolute;
+  font-size: .7rem;
+  background: gold;
+  text-align: center;
+  line-height: 55px;
+  width: 60px;
+  font-weight: bolder;
+  height: 60px;
+  right: 0;
+  border-radius: 50px;
+
+}
+ .error{
+   font-size: 9rem;
+   color: #3299a8;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 3rem;
+ }
+ .err_txt{
+   font-size: 5rem;
+ }
